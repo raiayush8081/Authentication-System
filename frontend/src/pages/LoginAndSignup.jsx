@@ -3,6 +3,7 @@ import { axiosInstance } from "../lib/axios"
 import { useNavigate } from "react-router-dom"
 import { useAuthContext } from "../context/AuthContext";
 const LoginAndSignUp = () => {
+     
      const { setAuthUser } = useAuthContext();
     const navigate = useNavigate();
     const [state, setState] = React.useState("login")
