@@ -8,12 +8,12 @@ import { useAuthContext } from "./context/AuthContext"
  const App = () => {
   const {authUser,loading}=useAuthContext();
   if(loading){
-    return <div>Loagin...</div>
+    return <div>Login...</div>
   }
   return (
      <>
      <Routes>
-      <Route path="/home" element={<LoginAndSignUp/>}/>
+      <Route path="/" element={<LoginAndSignUp/>}/>
       <Route path="/content" element={authUser?<Main/>: <Navigate to="/home"/>}/>
      </Routes>
      </>
