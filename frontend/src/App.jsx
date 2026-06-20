@@ -1,7 +1,7 @@
  
  
 import { Routes,Route,Navigate } from "react-router-dom"
-import Main from "./pages/main.jsx"
+import Main from "./pages/Main.jsx"
 import LoginAndSignUp from "./pages/LoginAndSignup"
 import { useAuthContext } from "./context/AuthContext"
  
